@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7ee5778df2.js" crossorigin="anonymous"></script>
+    <title>Bootstrap demo</title>
+</head>
+<body>
+    <div id="navigation">
+        <div class="menu">
+            <div class="head">
+                <div class="company">
+                    <img class="logo" src=""/>
+                    <div class="topic">
+                        Consulting services
+                    </div>
+                </div>
+            </div>
+            <div class="navigation">
+                <div class="menu-item">
+                    <a href="#Home">Главная</a>
+                </div>
+                <div class="menu-item">
+                    <a href="#AboutCompany">О Нас</a>
+                </div>
+                <div class="menu-item">
+                    <a href="#Services">Услуги</a>
+                </div>
+                <div class="menu-item">
+                    <a href="#Projects">Проекты</a>
+                </div>
+                <div class="menu-item">
+                    <a href="#Partners">Клиенты</a>
+                </div>
+                <div class="menu-item">
+                    <a href="#Contact">Контакты</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="Home" class="home-block">
+        <div class="home-content">
+            <div class="company-title">
+                <div class="word">Тонкая настройка</div> <div class="word"><span>механизма бизнеса</span></div>
+            </div>
+            <div class="company-description">
+                Комплексная защита и эффективное развитие вашего бизнеса
+            </div>
+            <div class="home-btn">
+                <a href="#Contact">Будьте с нами</a>
+            </div>
+        </div>
+    </div>
+    <div id="AboutCompany" class="about-block">
+        <div class="about-content">
+            <img src="img/consulting.jpg"/>
+            <div class="about-text">
+                <div class="about-title">
+                    Наша миссия
+                </div>
+                <div class="about-words">
+                    Мы предлагаем нашим клиентам весь комплекс услуг в области корпоративных финансов, управления проектами и продуктами, анализа рынков, оценки привлекательности и получения финансирования их инвестиционных проектов. Для этого мы предоставляем максимально подробную и понятную информацию по рассматриваемому объекту, как ретроспективную, так и прогнозную, а также обосновываем необходимость финансирования инвестиционных проектов в запрашиваемом объеме. Компания ведет консалтинговую деятельность на территории Европы и СНГ. Наши клиенты находятся в России, Испании, Узбекистане, Таджикистане, Эстонии, Кыргызстане. Офисы расположены в Санкт-Петербурге и Ташкенте.
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="Services" class="about-services">
+        <div class="services-cards">
+            <div class="services-card">
+                <img src="img/analitic.png"/>
+                <div class="services-text">
+                    Консалтинговые услуги
+                </div>
+                <div class="services-more-btn" onclick="showMoreServ(1)">
+                    Подробнее
+                </div>
+            </div>
+            <div class="services-card">
+                <img src="img/planning.png"/>
+                <div class="services-text">
+                    Анализ использования активов
+                </div>
+                <div class="services-more-btn" onclick="showMoreServ(2)">
+                    Подробнее
+                </div>
+            </div>
+            <div class="services-card">
+                <img src="img/audit.png"/>
+                <div class="services-text">
+                    Разработка инвестпроектов
+                </div>
+                <div class="services-more-btn" onclick="showMoreServ(3)">
+                    Подробнее
+                </div>
+            </div>
+            <div class="services-card">
+                <img src="img/change.png"/>
+                <div class="services-text">
+                    Сопровождение финтех-проектов
+                </div>
+                <div class="services-more-btn" onclick="showMoreServ(4)">
+                    Подробнее
+                </div>
+            </div>
+            <div class="services-card">
+                <img src="img/hrm.png"/>
+                <div class="services-text">
+                    Разработка Product Vision
+                </div>
+                <div class="services-more-btn" onclick="showMoreServ(5)">
+                    Подробнее
+                </div>
+            </div>
+            <div class="services-card">
+                <img src="img/security.png"/>
+                <div class="services-text">
+                    Корпоративное управление
+                </div>
+                <div class="services-more-btn" onclick="showMoreServ(6)">
+                    Подробнее
+            </div>
+        </div>
+
+        <div id="tmpl_serv1" class="hidden">
+            <div class="close-list" onclick="closeList(1)">	&#10006;</div>
+            <div class="list-title">
+                Консалтинговые услуги в области корпоративных финансов, оценки и реализации инвестиционных проектов
+            </div>
+            <ul>
+                <li>Exchange One. Разработка алгоритмов алгоритмического трейдинга, арбитражных стратегий. Участие в проектировании фреймфорка доступа к криптовалютным биржам.</li>
+                <li>ООО «Форт». Предварительная оценка реализуемости проекта возобновления производства н-литийбутила на мощностях воронежского филиала ФГУП "НИИСК".</li>
+                <li>Lorenzo Design. Разработка инвестмеморандума проекта создания интерьерной студии в виртуальном пространстве. Концепция монетизации, расчет денежных потоков.</li>
+                <li>ООО «ИНСЭИ», г. Санкт-Петербург, г. Смоленск. Создание бизнес-плана инвестиционного проекта по созданию и развитию вагоноремонтного (вагоностроительного) производства железнодорожных цистерн на территории республики Татарстан.</li>
+                </div>
+            </ul>
+        </div>
+
+        <div id="tmpl_serv2" class="hidden">
+            <div class="close-list" onclick="closeList(2)">	&#10006;</div>
+            <div class="list-title">
+                Анализ наиболее эффективного использования активов и контроль реализации инвестиционных проектов в коммерческой недвижимости, промышленности, торговле
+            </div>
+            <ul>
+                <li>Создание бизнес-плана проекта организации гериатрического пансионата «Рождествено». Концепция наиболее эффективного использования территории, монетизация проекта.</li>
+                <li>НПО «Диомар», Ленинградская область. Разработка технико-экономического обоснования строительства второй очереди и наиболее эффективного использования существующих активов завода по производству электролитического марганца Mn997.</li>
+                <li>ООО «РеалКом Портал», г. Санкт-Петербург. Создание финансовой модели бизнеса и бизнес-плана инвестиционного проекта по созданию рекреационно-курортной зоны для молодежи (10000 чел, 170 Га).</li>
+                <li>ООО «ОМК-Групп», «Целевая программа обращения с твердыми бытовыми отходами в Республике Карелия». Создание концепции сбора, сортировки и переработки ТБО в Республике Карелия. Бизнес-план кластеров переработки ТБО, финансовое моделирование, оценка окупаемости проекта.</li>
+            </ul>
+        </div>
+
+        <div id="tmpl_serv3" class="hidden">
+            <div class="close-list" onclick="closeList(3)">	&#10006;</div>
+            <div class="list-title">
+                Разработка инвестпроектов, структурирование схем привлечения капитала и сопровождение компаний в сделках дополнительного финансирования
+            </div>
+            <ul>
+                <li>ООО «ИВ Сервис». Разработка бизнес-плана станции технического обслуживания грузовых автомобилей. Расчет денежных потоков, разработка концепции комплекса. Получение финансирования 350 млн руб. в РСХБ.</li>
+                <li>«ГК Ресурсосбережение», «Спецтранс №1», г. Санкт-Петербург. Разработка бизнес-модели проекта создания сети заводов по переработке твердых бытовых отходов. Сопровождение сделки по финансированию проекта в группе ВЭБ.</li>
+                <li>ОOО «Неон», г. Санкт-Петербург. Разработка бизнес-плана и маркетинговой стратегии выхода нового производственного предприятия на рынок фармпрепаратов России, сопровождение сделок по привлечению финансирования в ВЭБ, ВТБ, Сбербанке</li>
+                <li>ООО «Рэмос-Альфа». Создание бизнес-плана проекта модернизации гофрокартонного производства для получения финансирования в группе ВТБ объемом 1 млрд руб.</li>
+            </ul>
+        </div>
+
+        <div id="tmpl_serv4" class="hidden">
+            <div class="close-list" onclick="closeList(4)">	&#10006;</div>
+            <div class="list-title">
+                Сопровождение финтех-проектов
+            </div>
+            <ul>
+                <li>ICO Worldcore. Поддержка медийного присутствия финтех-стартапа worldcore.eu. Постинг на bitcointalk.org, еженедельные статьи на криптовалютную тематику. Публикации в «Форбс», «Коммерсанте».</li>
+                <li>Paycrypto.money. Разработка системы платежей по расписанию, управление продуктом, разработка рыночных гипотез, проектирование модулей и процессов.</li>
+                <li>Pipsar.bot Разработка алгоритмов работы арбитражно-трейдингового бота. Quantitative research, анализ трейдинговых алгоритмов и зависимых переменных. Управлеие продуктом.</li>
+            </ul>
+        </div>
+
+        <div id="tmpl_serv5" class="hidden">
+            <div class="close-list" onclick="closeList(5)">	&#10006;</div>
+            <div class="list-title">
+                Оценка рисков, анализ финансового состояния и рентабельности, оценка кредитоспособности, маркетинговый анализ существующих и перспективных рынков, анализ микро- и макроокружения, упаковка стартапов, разработка product vision
+            </div>
+            <ul>
+                <li>Оценка привлекательности проекта строительства распределительного центра медицинских расходных материалов в республике Киргизия. Оценка объемов рынка расходных материалов, создание финмодели деятельности предприятия.</li>
+                <li>ООО «Самсон-Мед», г. Санкт-Петербург. Создание бизнес-плана инвестиционного проекта строительства птицефабрики на 50 000 т. мяса в год.</li>
+                <li>Группа компаний GrowFood. Санкт-Петербург, Москва Маркетинговое исследование рынков готовых наборов питания, составляющих ежедневный сбалансированный рацион питания человека, доставляемых с определенной периодичностью на дом.</li>
+                <li>ООО УК «ПБЛ Холдинг» г. Санкт-Петербург, г. Нарва-Йесуу, Эстония. Разработка концепции наиболее эффективного использования активов, разработка бизнес-идеи и создание бизнес-плана строительства аквапарка Noorus.</li>
+            </ul>
+        </div>
+
+        <div id="tmpl_serv6" class="hidden">
+            <div class="close-list" onclick="closeList(6)">	&#10006;</div>
+            <div class="list-title">
+                Консалтинг в области корпоративного управления (corporate governance), сопровождение инвестиционно-банковских услуг (IPO, частное размещение, выпуск облигаций, скупки за счет кредита, оценка бизнеса, M&A)
+            </div>
+            <ul>
+                <li>Группа «Пеноплэкс», г. Санкт-Петербург.  Бизнес-планирование, привлечение финансирования до 4,5 млрд. руб., маркетинговые обоснования к разработке стратегии группы. Экспресс-анализ эффективности работы подразделений, разработка антикризисных предложений.</li>
+                <li>Разработка концепции сбора и утилизации ТБО республики Карелия. Определение местоположения станций сбора ТБО, полигонов утилизации, расчет тарифов. </li>
+                <li>ООО «БиГ», г. Санкт-Петербург. Разработка бизнес-модели расширения сети заводов по производству несъемной строительной опалубки «Дюрисол», презентация проекта в Фонде РЖС.</li>
+                <li>Европейский Банк Реконструкции и Развития, «Murmansk Oblast Water Improvement Feasibility Study, EBRD Ref. 27646</li>
+            </ul>
+        </div>
+    </div>
+    <div id="Projects" class="projects-block">
+        <div class="project-title">
+            Мы понимаем ваш бизнес, мы работаем на ваш результат!
+        </div>
+        <div class="project-description">
+            Широкий спектр профессиональных услуг от разовой консультации до внедрения
+        </div>
+        <div class="project-cards">
+            <div class="group">
+                <div class="project-card">
+                    <div class="project-pic">
+                        <img src="img/chart.png"/>
+                    </div>
+                    <div class="project-text">
+                        Специалисты компании обладают более чем пятнадцатилетним опытом работы в области корпоративных финансов
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-pic">
+                        <img src="img/balloon.png"/>
+                    </div>
+                    <div class="project-text">
+                        Материалы по инвестпроектам клиентов принимаются для оценки при получении финансирования крупными банками
+                    </div>
+                </div>
+            </div>
+            <div class="group">
+                <div class="project-card">
+                    <div class="project-pic">
+                        <img src="img/management.png"/>
+                    </div>
+                    <div class="project-text">
+                        Оценка привлекательности проектов в области игровой и софтверной IT-индустрии
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-pic">
+                        <img src="img/puzzle.png"/>
+                    </div>
+                    <div class="project-text">
+                        Общий объём инвестиций – свыше 5 миллиардов долларов. Более 200 успешно реализованных проектов
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="Partners" class="partners-block">
+        <div class="partners-title">
+            Наши Клиенты
+        </div>
+        <div id="slider">
+            <img class="prev" src="img/strel.png" onclick="prevslide()">
+            <div id="slider-img">
+                <img src="img/pena.png">
+            </div>
+            <img class="next" src="img/strel.png" onclick="nextslide()">
+        </div>
+    </div>
+    <div id="Contact">
+        <div class="footer">
+            <div class="footer-company group">
+                <img src=""/>
+                <div class="email">
+                    example@inbox.ru
+                </div>
+            </div>
+            <div class="fast-nav group">
+                <div class="fast-nav-title">
+                    Навигация
+                </div>
+                <div class="nav-group">
+                    <div class="fast-nav-item">
+                        <a href="#Home">Главная</a>
+                    </div>
+                    <div class="fast-nav-item">
+                        <a href="#AboutCompany">О Нас</a>
+                    </div>
+                    <div class="fast-nav-item">
+                        <a href="#Services">Услуги</a>
+                    </div>
+                </div>
+                    <div class="nav-group">
+                    <div class="fast-nav-item">
+                        <a href="#Projects">Проекты</a>
+                    </div>
+                    <div class="fast-nav-item">
+                        <a href="#Partners">Клиенты</a>
+                    </div>
+                    <div class="fast-nav-item">
+                        <a href="#Contact">Контакты</a>
+                    </div>
+                </div>
+            </div>
+            <div class="socials group">
+                <div class="fast-nav-title">
+                    Социальные сети
+                </div>
+                <div class="icons-container">
+                <a target="blank" href="" class="btn">
+                    <i class="fab fa-brands fa-telegram --fa-inverse"></i>
+                </a>
+                <a target="blank" href="" class="btn">
+                    <i class="fab fa-brands fa-youtube --fa-inverse"></i>
+                </a>
+                <a target="blank" href="" class="btn">
+                    <i class="fab fa-brands fa-facebook --fa-inverse"></i>
+                </a>
+                <a target="blank" href="https://instagram.com/american_institute_tashkent?igshid=MzRlODBiNWFlZA==" class="btn">
+                    <i class="fab fa-brands fa-instagram --fa-inverse"></i>
+                </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
